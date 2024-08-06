@@ -133,5 +133,17 @@ public class RevenueCalculatorPageElements {
 			 System.out.println("move to next step");
 		 }
 	 }
+	 public void scrollFurther2()
+	 {
+		 try
+		 {
+		 JavascriptExecutor js =(JavascriptExecutor)driver;
+		 js.executeScript("arguments[0].scrollIntoView(true);", sliderTextField);
+		 }
+		 catch(Exception e)
+		 {
+			 System.out.println("move to next step");
+		 }
+	 }
 
 }

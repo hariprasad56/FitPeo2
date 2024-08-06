@@ -30,13 +30,13 @@ public class VerifyRevenueCalculatorPage extends BaseTest {
 		sf.assertAll();
 		RevenueCalculatorPageElements rcpe=new RevenueCalculatorPageElements(driver);
 		rcpe.scrollPaticularE();
-//		try
-//		{
-//    	rcpe.getleftSlider();
-//		}catch(Exception e)
-//		{
-//			System.out.println("move to next.......");
-//		}
+		try
+		{
+    	rcpe.getleftSlider();
+		}catch(Exception e)
+		{
+			System.out.println("move to next.......");
+		}
 		String desiredValue="560";
 		rcpe.getSliderTextField(desiredValue);
 		int valueAtpp=rcpe.getSliderAtPartPoint();
